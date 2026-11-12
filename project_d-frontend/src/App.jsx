@@ -11,6 +11,8 @@ import { useEffect, useState } from "react";
 import RegisterScreen from "./screens/RegisterScreen";
 import Wishlist from "./screens/wishlistScreen.jsx";
 import Profile from "./Pages/Profile.jsx";
+import PromoBanner from "./components/LandingPage/PromoBanner.jsx";
+import LandingPageHome from "./components/LandingPage/LandingPageHome.jsx";
 function App() {
   const storedUser = localStorage.getItem("userInfo");
 
@@ -491,6 +493,7 @@ setCart(formattedCart);
         <Route path="/orders" element={<OrdersScreen/>}/>
         <Route path="/orders/:id" element={<OrderDetailsScreen />} />
         <Route path="/profile" element={<Profile/>}/>
+        <Route path="/landingpage" element={<LandingPageHome/>}/>
       </Routes>
     </Router>
   );
