@@ -95,7 +95,8 @@ const Header = ({ cart = [] }) => {
 
         {/* LOGO */}
         <Link to="/" className="logo">
-          Velora
+          {/* Velora */}
+          The Stylish Designer
         </Link>
 
         {/* CATEGORIES */}
