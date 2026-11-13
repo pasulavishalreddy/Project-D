@@ -1,0 +1,89 @@
+.faq-section {
+  width: 100%;
+  margin: 3rem 0;
+  padding: 0 2rem; /* Left and right page spacing */
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Header stays centered across the full width */
+.faq-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.faq-header h2 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.faq-header p {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* Accordion aligns to the left side */
+.faq-list {
+  /* max-width: 820px; */
+  width: 100%;
+  margin: 0; /* Removed 'auto' so it stays on the left */
+  border-top: 1px solid #e5e7eb;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.25rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1f2937;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.faq-question:hover {
+  color: #000000;
+}
+
+.faq-icon {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #4b5563;
+  flex-shrink: 0;
+}
+
+/* Smooth accordion animation */
+.faq-answer-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.28s ease;
+}
+
+.faq-answer-wrapper.open {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer {
+  overflow: hidden;
+}
+
+.faq-answer p {
+  padding-bottom: 1.25rem;
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.65;
+  font-size: 0.97rem;
+  text-align: left;
+}
