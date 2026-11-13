@@ -458,7 +458,8 @@ const CategoryScreen = ({ addToCart }) => {
           >
             <div className="card h-100 shadow-sm">
               <img
-                src={product.image}
+                // src={product.image}
+                src={product.images?.[0] }
                 className="card-img-top"
                 alt={product.name}
                 style={{ height: "260px", objectFit: "cover" }}
