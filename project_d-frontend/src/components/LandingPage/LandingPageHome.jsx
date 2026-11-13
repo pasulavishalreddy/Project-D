@@ -6,6 +6,7 @@ import NewArrivalsSection from './NewArrivales'
 import Infinite_scroll from "./Infinite_scroll"
 import Google_review from "./Google_review"
 import MensFAQAccordion from './FAQAccordion'
+import Footer from '../Footer/Footer'
 
 export default function LandingPageHome({addToCart}) {
   return (
@@ -17,6 +18,7 @@ export default function LandingPageHome({addToCart}) {
     <MensFAQAccordion/>
     {/* <Infinite_scroll/> */}
     <Infinite_scroll addToCart={addToCart}/>
+    <Footer/>
     </div>
   )
 }
