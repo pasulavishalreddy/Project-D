@@ -13,6 +13,8 @@ import Wishlist from "./screens/wishlistScreen.jsx";
 import Profile from "./Pages/Profile.jsx";
 import PromoBanner from "./components/LandingPage/PromoBanner.jsx";
 import LandingPageHome from "./components/LandingPage/LandingPageHome.jsx";
+import CategoryScreen from "./screens/CategoryScreen.jsx";
+
 function App() {
   const storedUser = localStorage.getItem("userInfo");
 
@@ -466,10 +468,10 @@ setCart(formattedCart);
       <Routes>
         <Route path="/register" element={<RegisterScreen />} />
         <Route path="/login" element={<LoginScreen />}/>
-        <Route
+        {/* <Route
           path="/"
           element={<HomeScreen addToCart={addToCart} />}
-        />
+        /> */}
 <Route path="/wishlist" element={<Wishlist />} />
         <Route
           path="/product/:id"
@@ -493,7 +495,8 @@ setCart(formattedCart);
         <Route path="/orders" element={<OrdersScreen/>}/>
         <Route path="/orders/:id" element={<OrderDetailsScreen />} />
         <Route path="/profile" element={<Profile/>}/>
-        <Route path="/landingpage" element={<LandingPageHome/>}/>
+        <Route path="/" element={<LandingPageHome/>}/>
+        <Route path="/men" element={<CategoryScreen addToCart={addToCart}/>}/>
       </Routes>
     </Router>
   );

@@ -1,0 +1,41 @@
+.category-page {
+  padding: 20px;
+}
+
+.category-page h1 {
+  margin-bottom: 8px;
+}
+
+.collection-filter {
+  margin: 25px 0;
+}
+
+.collection-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.collection-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.collection-option input {
+  cursor: pointer;
+}
+
+.collection-option:has(input:checked) {
+  border-color: #222;
+  background: #f2f2f2;
+}
+
+.category-page button {
+  cursor: pointer;
+}
