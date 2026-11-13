@@ -100,7 +100,8 @@ const Header = ({ cart = [] }) => {
 
         {/* CATEGORIES */}
         <nav className="nav-categories">
-          <Link to="/?category=men">MEN</Link>
+          {/* <Link to="/?category=men">MEN</Link> */}
+          <Link to="/men">MEN</Link>
           <Link to="/?category=women">WOMEN</Link>
           <Link to="/?category=kids">KIDS</Link>
         </nav>
