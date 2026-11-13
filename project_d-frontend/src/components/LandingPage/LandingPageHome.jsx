@@ -4,14 +4,19 @@ import Header from '../Header/Header'
 import PromoBanner from './PromoBanner'
 import NewArrivalsSection from './NewArrivales'
 import Infinite_scroll from "./Infinite_scroll"
+import Google_review from "./Google_review"
+import MensFAQAccordion from './FAQAccordion'
 
-export default function LandingPageHome() {
+export default function LandingPageHome({addToCart}) {
   return (
     <div>
          {/* <Header/> */}
     <PromoBanner/>
     <NewArrivalsSection/>
-    <Infinite_scroll/>
+    <Google_review/>
+    <MensFAQAccordion/>
+    {/* <Infinite_scroll/> */}
+    <Infinite_scroll addToCart={addToCart}/>
     </div>
   )
 }

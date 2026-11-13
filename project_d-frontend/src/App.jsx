@@ -495,7 +495,8 @@ setCart(formattedCart);
         <Route path="/orders" element={<OrdersScreen/>}/>
         <Route path="/orders/:id" element={<OrderDetailsScreen />} />
         <Route path="/profile" element={<Profile/>}/>
-        <Route path="/" element={<LandingPageHome/>}/>
+        {/* <Route path="/" element={<LandingPageHome />}/> */}
+        <Route path="/" element={<LandingPageHome  addToCart={addToCart}/>}/>
         <Route path="/men" element={<CategoryScreen addToCart={addToCart}/>}/>
       </Routes>
     </Router>

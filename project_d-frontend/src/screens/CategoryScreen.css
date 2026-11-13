@@ -1,4 +1,4 @@
-.category-page {
+/* .category-page {
   padding: 20px;
 }
 
@@ -38,4 +38,272 @@
 
 .category-page button {
   cursor: pointer;
+} */
+
+
+
+/*  */
+.category-page {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 24px;
+  box-sizing: border-box;
+}
+
+.category-heading {
+  margin-bottom: 30px;
+}
+
+.category-heading h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.category-heading p {
+  color: #777;
+  font-size: 15px;
+}
+
+/* MAIN TWO-COLUMN LAYOUT */
+
+.category-layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 35px;
+  align-items: start;
+}
+
+/* LEFT FILTER SIDEBAR */
+
+.filter-sidebar {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 22px;
+  background: #fff;
+}
+
+.filter-header {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.filter-header h2 {
+  font-size: 20px;
+}
+
+.collection-filter {
+  padding: 24px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.collection-filter h3,
+.price-slider h3 {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.collection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.collection-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.collection-option input {
+  accent-color: #222;
+  cursor: pointer;
+}
+
+.filter-reset {
+  margin-top: 20px;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: #555;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* PRICE SLIDER */
+
+.price-slider {
+  padding-top: 24px;
+}
+
+.price-slider p {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.dual-slider {
+  position: relative;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.slider-track,
+.slider-range {
+  position: absolute;
+  height: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.slider-track {
+  width: 100%;
+  background: #ddd;
+}
+
+.slider-range {
+  /* background: #222; */
+  background: #4f46e5;
+}
+
+.dual-range {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  pointer-events: none;
+}
+
+.dual-range::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #222;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.dual-range::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  /* background: #222; */
+  background: #4f46e5;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* RIGHT PRODUCT SECTION */
+
+.category-products {
+  min-width: 0;
+}
+
+.products-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.products-toolbar h2 {
+  font-size: 20px;
+}
+
+.sort-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-filter label {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.sort-filter select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+/* PRODUCT GRID */
+
+.category-products .product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.no-products {
+  text-align: center;
+  padding: 50px 0;
+  color: #777;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1100px) {
+  .category-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .category-products .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .category-page {
+    padding: 20px 12px;
+  }
+
+  .category-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .products-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .category-products .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+
+/*  */
+.collection-option input[type="checkbox"] {
+  color-scheme: white;
+}
+
+.btn-indigo {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #4f46e5;
+  --bs-btn-border-color: #4f46e5;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #4338ca;
+  --bs-btn-hover-border-color: #3730a3;
+  --bs-btn-focus-shadow-rgb: 79, 70, 229;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #3730a3;
+  --bs-btn-active-border-color: #312e81;
 }
