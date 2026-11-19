@@ -103,8 +103,9 @@ const Header = ({ cart = [] }) => {
         <nav className="nav-categories">
           {/* <Link to="/?category=men">MEN</Link> */}
           <Link to="/men">MEN</Link>
-          <Link to="/?category=women">WOMEN</Link>
-          <Link to="/?category=kids">KIDS</Link>
+          <Link to="/products-services">Products & Services</Link>
+          {/* <Link to="/?category=women">WOMEN</Link>
+          <Link to="/?category=kids">KIDS</Link> */}
         </nav>
 
         {/* SEARCH BAR */}

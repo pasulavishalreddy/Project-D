@@ -14,6 +14,7 @@ import Profile from "./Pages/Profile.jsx";
 import PromoBanner from "./components/LandingPage/PromoBanner.jsx";
 import LandingPageHome from "./components/LandingPage/LandingPageHome.jsx";
 import CategoryScreen from "./screens/CategoryScreen.jsx";
+import Products_Services from "./screens/Products_Services.jsx";
 
 function App() {
   const storedUser = localStorage.getItem("userInfo");
@@ -498,6 +499,7 @@ setCart(formattedCart);
         {/* <Route path="/" element={<LandingPageHome />}/> */}
         <Route path="/" element={<LandingPageHome  addToCart={addToCart}/>}/>
         <Route path="/men" element={<CategoryScreen addToCart={addToCart}/>}/>
+        <Route path="/products-services" element={<Products_Services/>}/>
       </Routes>
     </Router>
   );
