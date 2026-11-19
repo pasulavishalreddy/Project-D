@@ -50,7 +50,7 @@ const Header = ({ cart = [] }) => {
         {/* LOGO */}
         <Link to="/" className="logo">
           {/* Velora */}
-          The Stylish Designer
+         KGN The Stylish Designer-Manikonda
         </Link>
 
         {/* CATEGORIES */}
