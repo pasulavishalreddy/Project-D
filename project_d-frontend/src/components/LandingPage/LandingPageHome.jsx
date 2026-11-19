@@ -7,13 +7,16 @@ import Infinite_scroll from "./Infinite_scroll"
 import Google_review from "./Google_review"
 import MensFAQAccordion from './FAQAccordion'
 import Footer from '../Footer/Footer'
+import TailoringServices from '../TailoringServices/TailoringServices'
 
 export default function LandingPageHome({addToCart}) {
   return (
     <div>
          {/* <Header/> */}
     <PromoBanner/>
+    <TailoringServices/>
     <NewArrivalsSection/>
+    
     <Google_review/>
     <MensFAQAccordion/>
     {/* <Infinite_scroll/> */}
