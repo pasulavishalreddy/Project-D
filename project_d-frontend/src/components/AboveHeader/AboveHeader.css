@@ -1,0 +1,44 @@
+.top-bar {
+  background: #3e2323;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.top-bar-content {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-bar-left,
+.top-bar-right,
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-bar-right {
+  gap: 25px;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .top-bar-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .top-bar-right {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
