@@ -18,8 +18,8 @@
 
 /* LOGO */
 .logo {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
   color: #111827;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -83,14 +83,7 @@
   box-sizing: border-box;
 }
 
-/* Logo */
-.logo {
-  font-size: 28px;
-  font-weight: 800;
-  color: #4f46e5;
-  text-decoration: none;
-  white-space: nowrap;
-}
+
 
 /* Categories */
 .nav-categories {
